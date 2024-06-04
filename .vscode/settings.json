@@ -1,0 +1,37 @@
+{
+    "files.exclude": {
+        "**/.git": false,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    "autoDocstring.docstringFormat": "google",
+    "pylint.args": [],
+    "flake8.args": [
+        "--ignore=E305"
+    ],
+    "black-formatter.args": [
+        "--config ${workspaceFolder}/.black.toml"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+    },
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "python.terminal.launchArgs": [],
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        {
+            "color": "#33F0FF",
+            "column": 119
+        }
+    ]
+}
