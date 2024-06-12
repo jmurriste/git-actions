@@ -14,5 +14,7 @@ setup(
     author='jorge',
     author_email='jorge@jorge.com',
     description='a simple package',
-    license='MIT'
+    license='MIT',
+    install_requires=[""],
+    setup_requires=["wheel"]
 )
